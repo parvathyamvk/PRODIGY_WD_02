@@ -2,7 +2,7 @@ let timer;
 let startTime;
 let elapsedTime = 0;
 let running = false;
-let display = document.querySelector('.time'); // Changed to querySelector('.time') to match the div's class
+let display = document.querySelector('.time'); 
 let startButton = document.getElementById('start');
 let stopButton = document.getElementById('stop');
 let resetButton = document.getElementById('reset');
@@ -29,7 +29,7 @@ function resetStopwatch() {
     running = false;
     elapsedTime = 0;
     display.textContent = '00:00:00';
-    lapsContainer.innerHTML = 'Laps'; // Clear lap times if implemented
+    lapsContainer.innerHTML = 'Laps'; 
 }
 
 function updateTime() {
